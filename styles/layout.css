@@ -1,0 +1,122 @@
+body {
+    background-color: white;
+}
+
+
+#front-page {
+    background: no-repeat center;
+    background-size: contain;
+    position: absolute;
+    margin-top: 50px;
+    width: 100vw;
+    height: 90vh;
+
+}
+
+#back-page {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+#title-page {
+    height: 10vh;
+    padding: 0px;
+}
+
+#side-page {
+    display: table-cell;
+    height: 90vh;
+    width: 150px;
+}
+
+#viz-page {
+    display: table-cell;
+    height: 90vh;
+    width: 80vw;
+}
+
+.viz-image {
+    background: no-repeat center;
+    background-size: contain;
+    width: 800px;
+    height: 100%;
+    margin: auto;
+}
+
+
+
+.question-text {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.options-list {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.option {
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    cursor: pointer;
+
+    text-align: center;
+
+    border: 1px solid;
+    border-radius: 15px;
+
+    margin-top : 10px;
+    margin-left : 5px;
+    margin-right: 5px;
+
+    padding: 10px;
+
+    background-color: #EEEEEE;
+    border-color: #cccccc;
+
+    float:left;
+    width: 30px;
+}
+
+.button {
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    cursor: pointer;
+
+    border: 1px solid;
+    border-radius: 15px;
+
+    text-align: center;
+
+    margin-top : 10px;
+    margin-left : 20px;
+    margin-right: 20px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    /*position: fixed;*/
+    /*bottom: 120px;*/
+
+    float: left;
+
+    background-color: #444444;
+    color: white;
+}
+
+
+.option-list, .selected {
+    background-color: #2ecc71!important;
+}
+
+.loading-bar {
+    height: 10px;
+    background-color: darkred;
+
+}
