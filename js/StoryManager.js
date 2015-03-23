@@ -193,7 +193,7 @@ function StoryManager() {
     var submitResults = function () {
         var data = {user: userId, type: QUESTIONNAIRE_TYPE, answers : answers};
 
-        console.log(answers);
+        console.log(JSON.stringify(answers));
 
         //console.log(data);
 /*
