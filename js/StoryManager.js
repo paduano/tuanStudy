@@ -15,22 +15,27 @@ function StoryManager() {
 
     var userId =  "user" + parseInt(Math.random() * 100000);
 
+    var pagesOrder = [];
 
+    for(var i = 0; i < QUESTIONNAIRE_PAGES.length; i++){
+        pagesOrder.push(i);
+    }
+
+    pagesOrder = _.shuffle(pagesOrder);
 
     self.pages = QUESTIONNAIRE_PAGES;
 
 
     self.nextPage = function () {
 
-        currentPage = self.pages[currentPageNumber];
+        currentPage = self.pages[pagesOrder[currentPageNumber]];
 
 
         //submit at the last slide
-        if(currentPage.action === 'submit'){
+        if(currentPageNumber == self.pages.length){
+            alert('test over. See the console for the results');
             submitResults();
-            console.log("results submitted");
-        } else if(currentPageNumber == self.pages.length){
-            //END PRESENTATION
+
             return;
         }
 
